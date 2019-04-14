@@ -2,6 +2,7 @@ package leyendo_escribiendo_bytes;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class Lectura_Escritura {
@@ -46,7 +47,31 @@ public class Lectura_Escritura {
 			e.printStackTrace();
 		}
 
-		//System.out.println(contador);
+		// System.out.println(contador);
+		
+		// uso del metodo para crear el archivo
+		crea_fichero(datos_entrada);
 	}
 
+	// metedo para la escritura del nuevo archivo
+	// es estatico para usarlo directamente en el matodo main
+	public static void crea_fichero(int[] datos_nuevo_fichero) {
+		// ruta del archivo nuevo
+		String mi_archivo_nuevo = "C:\\Users\\Usuario\\eclipse-workspace\\Acceso_Ficheros\\src\\leyendo_escribiendo_bytes\\imagen_copiada.png";
+
+		try {
+			// stream de salida de bytes
+			FileOutputStream fichero_nuevo = new FileOutputStream(mi_archivo_nuevo);
+
+			for (int i = 0; i < datos_nuevo_fichero.length; i++) {
+				// escribe cada byte
+				fichero_nuevo.write(datos_nuevo_fichero[i]);
+			}
+
+			fichero_nuevo.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }
