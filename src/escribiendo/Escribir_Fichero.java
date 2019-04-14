@@ -18,7 +18,7 @@ class Escribiendo {
 	public void escribir() {
 		String frase = "Esto es una prueba de escritura";
 
-		String mi_archivo = "C:\\Users\\Usuario\\eclipse-workspace\\Acceso_Ficheros\\src\\archivo_para_escribir.txt";
+		String mi_archivo = "C:\\Users\\Usuario\\eclipse-workspace\\Acceso_Ficheros\\src\\escribiendo\\archivo_para_escribir.txt";
 
 		try {
 			// creacion o sobreescritura del archivo
