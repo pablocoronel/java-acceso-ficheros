@@ -12,3 +12,6 @@ Package leyendo:
 Package leyendo_escribiendo_bytes
 155: Streams IV. Leyendo archivos. Streams Byte I => Lectura_Escritura.java
 156: Streams V. Escribiendo archivos Streams Byte II => Lectura_Escritura.java
+
+Package serializacion
+157: Serialización => Serializando.java
