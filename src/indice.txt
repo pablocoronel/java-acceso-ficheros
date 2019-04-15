@@ -15,3 +15,8 @@ Package leyendo_escribiendo_bytes
 
 Package serializacion
 157: Serialización => Serializando.java
+158: Serialización II. SerialVersionUID => Serializando.java
+
+Package ficheros_directorios
+159: Manipulación archivos y directorios. Clase File I => Pruebas_Rutas.java, Acceso_Ficheros.java
+160: Manipulación archivos y directorios. Clase File II => 
