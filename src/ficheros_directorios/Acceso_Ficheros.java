@@ -7,8 +7,13 @@ public class Acceso_Ficheros {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		File ruta = new File(
-				"C:/Users/Usuario/eclipse-workspace/Acceso_Ficheros/src/ficheros_directorios/carpeta_pruebas");
+		String ruta_en_windows = "C:/Users/Usuario/eclipse-workspace/Acceso_Ficheros/src/ficheros_directorios/carpeta_pruebas";
+
+		String ruta_multisistema = ruta_en_windows.replace("/", File.separator); // adapata la barra segun el sistema
+																					// operativo
+		System.out.println(ruta_multisistema);
+
+		File ruta = new File(ruta_multisistema);
 
 		System.out.println(ruta.getAbsolutePath());
 
@@ -25,7 +30,7 @@ public class Acceso_Ficheros {
 			// System.out.println(f);
 			if (f.isDirectory()) {
 				String[] archivos_subcarpeta = f.list();
-				
+
 				for (int j = 0; j < archivos_subcarpeta.length; j++) {
 					System.out.println(archivos_subcarpeta[j]);
 				}

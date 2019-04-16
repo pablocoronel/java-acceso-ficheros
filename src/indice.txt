@@ -19,4 +19,4 @@ Package serializacion
 
 Package ficheros_directorios
 159: Manipulación archivos y directorios. Clase File I => Pruebas_Rutas.java, Acceso_Ficheros.java
-160: Manipulación archivos y directorios. Clase File II => 
+160: Manipulación archivos y directorios. Clase File II => Creando.java, Eliminar.java
